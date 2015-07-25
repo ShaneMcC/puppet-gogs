@@ -26,7 +26,8 @@ class gogs::config(
   $secret_key = $gogs::secret_key,
   $app_name = $gogs::app_name,
   $disable_registration = $gogs::disable_registration,
-  $require_signin_view = $gogs::require_signin_view
+  $require_signin_view = $gogs::require_signin_view,
+  $ini_ensure = $gogs::ini_ensure
 
 ) inherits gogs::params {
 
@@ -45,7 +46,7 @@ class gogs::config(
   }
 
   file { '/etc/gogs/conf/app.ini':
-    ensure  => 'file',
+    ensure  => $ini_ensure,
     content => template('gogs/app.ini.erb'),
     owner   => $owner,
     group   => $group,
