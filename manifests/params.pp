@@ -14,8 +14,12 @@ class gogs::params {
   $run_mode        = 'prod'
   $repository_root = '/home/gogs/gogs-repositories'
   $enable_gzip     = false
+  $protocol        = 'http'
   $domain          = 'localhost'
+  $addr            = ''
   $port            = 6000
+  $cert_file       = 'custom/https/cert.pem'
+  $key_file        = 'custom/https/cert.key'
   $root_url        = "http://${domain}:${port}/"
   $db_type         = 'postgres'
   $db_host         = 'localhost'
@@ -26,8 +30,8 @@ class gogs::params {
   $db_ssl_mode     = 'disable'
   $db_data         = 'data/gogs.db'
   $app_name        = 'Gogs: Go Git Service'
-  $disable_registration = 'false'
-  $require_signin_view = 'false'
+  $disable_registration = false
+  $require_signin_view = false
   $secret_key      = 'jdkR3DBcXUDdznd'
 
   # Variables

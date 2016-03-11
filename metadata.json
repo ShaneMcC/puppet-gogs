@@ -1,6 +1,6 @@
 {
   "name": "Siteminds-gogs",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "author": "bjwschaap/Siteminds",
   "summary": "Puppet module to manage the Go Git Service (Gogs).",
   "license": "MIT",
@@ -53,6 +53,6 @@
   ],
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":"4.x"},
-    {"name":"puppetlabs/apt","version_requirement":"1.7.0"}
+    {"name":"puppetlabs/apt","version_requirement":">=1.8.0 <3.0.0"}
   ]
 }

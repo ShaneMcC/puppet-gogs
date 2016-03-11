@@ -1,3 +1,19 @@
+2016-01-29 Release 0.0.8
+- Pull request by @AndresGiardini to replace 'Package' with ensure_packages
+- Pull request by @Samuelson to remove a duplicate parameter in config.pp
+
+2015-12-16 Release 0.0.7
+- Pull request by @AndreaGiardini to use operatingsystemmajrelease instead of lsbmajdistrelease
+
+2015-12-10 Release 0.0.6
+- Pull request by @jasonhancock to use new apt module, and respect centos7 repo url
+
+2015-11-09 Release 0.0.5
+- Various fixes by @AndreaGiardini
+
+2015-10-30 Release 0.0.4
+- Fixes #9 through #12 by @StrangeWill
+
 2015-03-18 Release 0.0.3
 - Merged Gogs package version support from pull request by @rauchrob
 - Updated and fixed rspec tests
